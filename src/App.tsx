@@ -1,8 +1,10 @@
 import "./style.ts";
 import { Input } from "./components/Input";
 import { useState } from "react";
-import { Card } from "./components/Card";
+import { Card2 } from "./components/Card";
 import { Container, Content } from "./style";
+import { Button } from 'antd';
+import { DownloadOutlined } from '@ant-design/icons';
 
 function App() {
   const [name, setName] = useState<string>("");
@@ -47,12 +49,15 @@ function App() {
           value={hobby}
           onChange={(e) => setHobby(e.target.value)}
         />
-        <button onClick={() => handleSubmit(name, age, hobby)}>Enviar</button>
+        <Button type="primary" shape="round" icon={<DownloadOutlined />}
+        onClick={() => handleSubmit(name, age, hobby)}>
+          Enviar
+        </Button>
       </Content>
       <h1>Cards cadastrados:</h1>
       <ul>
         {users.map((person) => (
-          <Card
+          <Card2
             key={person.age}
             name={person.name}
             age={person.age}

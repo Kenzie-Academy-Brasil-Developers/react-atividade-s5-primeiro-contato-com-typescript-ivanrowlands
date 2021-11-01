@@ -4,7 +4,8 @@ export const ContainerInput = styled.div`
   display: flex;
   justify-content: flex-end;
   margin: 5px auto;
-  width: 90%;
+  padding-right:100px;
+  width: 50%;
   color: darkblue;
   align-items: center;
   label {

@@ -15,6 +15,7 @@ export const Container = styled.main`
     padding: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 `;
 
@@ -29,16 +30,7 @@ export const Content = styled.div`
   align-items: space-around;
   flex-direction: column;
   button {
-    width: 85%;
+    width: 50%;
     margin: 10px auto;
-    font-size: 1.5rem;
-    background: aquamarine;
-    border: 2px solid transparent;
-    border-radius: 5px;
-    color: darkblue;
-    &:hover {
-      color: aquamarine;
-      background: darkblue;
-    }
   }
 `;
